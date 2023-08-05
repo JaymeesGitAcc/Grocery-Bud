@@ -150,6 +150,25 @@
   background: transparent;
 }
 
+.developer_info {
+  text-align: center;
+}
+
+.developer_info {
+  position: fixed;
+  color: rgba(40, 40, 40, 0.5);
+  font-size: 1.25rem;
+  top: 0;
+  left: 1rem;
+  right: 1rem;
+}
+
+.name {
+  color: dodgerblue;
+  /* font-size: 2rem; */
+  text-shadow: 0 1px 1px black;
+}
+
 @media (min-width: 768px) {
   .main {
     box-shadow: 1px 4px 15px -8px rgba(0, 0, 0, 0.733);

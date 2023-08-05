@@ -1,5 +1,6 @@
 import { useState } from "react";
 import InputField from "./components/InputField";
+import DeveloperName from "./components/DeveloperName";
 
 function App() {
 
@@ -12,17 +13,20 @@ function App() {
     setAction(action);
 
     setTimeout(() => {
-        setAlertText('');
-        setAction('hide');
+      setAlertText('');
+      setAction('hide');
     }, 1500);
-}
+  }
 
   return (
-    <main className="main">
+    <>
+      <main className="main">
         <div className={`alert alert-${action}`}>{alertText}</div>
         <h1 className="heading">Grocery Bud</h1>
         <InputField displayAlert={displayAlert} />
-    </main>
+      </main>
+      <DeveloperName />
+    </>
   );
 }
 
